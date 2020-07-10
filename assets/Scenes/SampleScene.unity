@@ -211,6 +211,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4319255652150843196, guid: 7d99f63e73fb62c438861f231fbb7305,
+        type: 3}
+      propertyPath: bulletForce
+      value: 5.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4578948865316760196, guid: 7d99f63e73fb62c438861f231fbb7305,
         type: 3}
       propertyPath: m_Name
@@ -224,7 +229,7 @@ PrefabInstance:
     - target: {fileID: 4915042325683148430, guid: 7d99f63e73fb62c438861f231fbb7305,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4915042325683148430, guid: 7d99f63e73fb62c438861f231fbb7305,
         type: 3}
