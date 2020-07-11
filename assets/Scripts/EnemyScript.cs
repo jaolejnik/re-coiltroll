@@ -10,36 +10,9 @@ public class EnemyScript : Pistol
     private Vector2 playerPos;
     private Rigidbody2D playerRigidbody;
 
-    // Pathfinding vars
-    Transform target;
-    public float speed = 200f;
-    public float nextWaypointDistance = 3f;
-    Path path;
-    int currentWaypoint;
-    bool reachedEndOfPath = false;
-    Seeker seeker;
-    Rigidbody2D rb;
-
-    void OnPathComplete(Path p)
-    {
-      if (!p.error)
-      {
-        path = p;
-        currentWaypoint = 0;
-      }
-    }
-
     void Start()
     {
-        playerPrefab = GameObject.FindWithTag ("Player");
-        if (playerPrefab == null)
-        {
-          Debug.Log("player is null");
-        }
-        target = GameObject.FindWithTag ("Player").transform;
-        seeker = GetComponent<Seeker>();
-        rb = GetComponent<Rigidbody2D>();
-        seeker.StartPath(rb.position, target.position, OnPathComplete);
+        playerPrefab = GameObject.FindWithTag("Player");
         SpawnEffect();
         playerRigidbody = playerPrefab.GetComponent<Rigidbody2D>();
     }
@@ -52,8 +25,6 @@ public class EnemyScript : Pistol
     void FixedUpdate() {
         LookAtPlayer();
         isAlive();
-        target = GameObject.FindWithTag ("Player").transform;
-
     }
 
     void PlayerPosition(){
