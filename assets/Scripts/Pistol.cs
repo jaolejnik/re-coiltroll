@@ -20,6 +20,12 @@ public class Pistol : MonoBehaviour
 
     public float hp = 1;
 
+    public float ammo = 3;
+    private bool canShoot = true;
+    public float lastShoot;
+    public float fireRateTime;
+    public float fireRateLeft;
+
     void Start(){
         // SpawnEffect();
     }
@@ -32,14 +38,31 @@ public class Pistol : MonoBehaviour
         Destroy(spawnEff, 1.5f);
     }
 
-    public void Shoot(){
-        GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
-        Rigidbody2D rigidbodyBullet = bullet.GetComponent<Rigidbody2D>();
-        rigidbodyBullet.AddForce(shootPoint.up*bulletForce, ForceMode2D.Impulse);
-        AudioSource.PlayClipAtPoint(shotSound, pistolBody.transform.position, 1.5f);
-        RecoilShoot();
+    public bool Shoot(){
+        if(canShoot){
+            GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+            Rigidbody2D rigidbodyBullet = bullet.GetComponent<Rigidbody2D>();
+            rigidbodyBullet.AddForce(shootPoint.up*bulletForce, ForceMode2D.Impulse);
+            AudioSource.PlayClipAtPoint(shotSound, pistolBody.transform.position, 1.5f);
+            RecoilShoot();
+            fireRateLeft = fireRateTime;
+            return true;
+        }
+        return false;
     }
 
+    public void FireRate(){       
+        if(fireRateLeft <= 0 ){
+            canShoot = true;
+            // fireRateLeft = fireRateTime;
+            Debug.Log(this);
+        }
+        else{
+            canShoot = false;
+            fireRateLeft -= Time.deltaTime;
+        }
+
+    }
     public void RecoilForward(){
         pistolBody.velocity = new Vector2(0,0);
         pistolBody.AddForce(pistolBody.transform.up*recoilForce*0.1f, ForceMode2D.Impulse);

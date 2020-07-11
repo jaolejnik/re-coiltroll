@@ -21,15 +21,15 @@ public class EchoScript : MonoBehaviour
     {
         if(playerRigidbody.velocity.sqrMagnitude > velocityTresh*velocityTresh){
 
-        if(timeBtwSpawns <= 0 ){
-            GameObject g = Instantiate(echo, playerRigidbody.transform.position,  playerRigidbody.transform.rotation);
-            Destroy(g, 1);
-            timeBtwSpawns = startTimeBtwSpawns;
-            Debug.Log(this);
-        }
-        else{
-            timeBtwSpawns -= Time.deltaTime;
-        }
+            if(timeBtwSpawns <= 0 ){
+                GameObject g = Instantiate(echo, playerRigidbody.transform.position,  playerRigidbody.transform.rotation);
+                Destroy(g, 1);
+                timeBtwSpawns = startTimeBtwSpawns;
+                Debug.Log(this);
+            }
+            else{
+                timeBtwSpawns -= Time.deltaTime;
+            }
         }
     }
 }

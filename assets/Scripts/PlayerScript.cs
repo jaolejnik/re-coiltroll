@@ -17,13 +17,16 @@ public class PlayerScript : Pistol
     }
 
     void FixedUpdate() {
+        FireRate();
         LookAtMouse();
     }
 
     void KeyHandler(){
         if(Input.GetButtonDown("Fire1")){
-            Shoot();
-            shaker.ShakeShoot();
+            if(Shoot()){
+             shaker.ShakeShoot();
+
+            }
         }
         if(Input.GetButtonDown("Fire2")){
             RecoilForward();
