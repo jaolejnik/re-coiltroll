@@ -47,8 +47,8 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.8
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.34
-  m_LightVolumeOpacity: 0.03
+  m_Intensity: 1.06
+  m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: f1d5466dbf6b25dd00000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 1
@@ -60,7 +60,7 @@ MonoBehaviour:
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 2.7955992
   m_PointLightOuterRadius: 3.8557334
-  m_PointLightDistance: 2.51
+  m_PointLightDistance: 2.4
   m_PointLightQuality: 0
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
@@ -160,7 +160,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eccf60d4c21908147b0e622d68819d75, type: 2}
+  - {fileID: 2100000, guid: 8a94a17995fbac0448bb1ece83767b42, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: d919a4a25515d684796a2866fa0d83ea, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d543917602b089241a4c3588d759f505, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa207fd7b7f5a646a69ebf45ca18bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwSpawns: 0
-  echo: {fileID: 0}
+  startTimeBtwSpawns: 0.1
+  echo: {fileID: 7099847765584147427, guid: 42674b53bab24444d8cd59c249bd4e00, type: 3}
   playerRigidbody: {fileID: 675656110738658228}
   velocityTresh: 0
