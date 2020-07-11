@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: lel
+  m_Name: lel 1
   m_Shader: {fileID: -6465566751694194690, guid: 00771411b9169574e92e148e9a1e6c18,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -34,7 +34,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_1884EF8B: 28
-    - Vector1_E8D10B11: 1
+    - Vector1_E8D10B11: 1.1
     m_Colors:
-    - Color_BCFF0434: {r: 1.844303, g: 1.844303, b: 1.844303, a: 0.2470588}
+    - Color_BCFF0434: {r: 2.433572, g: 0, b: 0, a: 0.2470588}
     - Vector2_7E7E02E4: {r: 1, g: 0, b: 0, a: 0}
