@@ -2,22 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerScript : Pistol
 {
     // Start is called before the first frame update
-    public Transform shootPoint;
-    public GameObject bulletPrefab;
-    [Range(0f, 20f)]
-    public float bulletForce;
-    public Rigidbody2D playerBody;
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+    private Vector2 mousePos;
+    public Camera cam;
     void Update()
     {
-        KeyHandler();
+        MousePosition();
+        KeyHandler();       
+    }
+
+    void FixedUpdate() {
+        LookAtMouse();
     }
 
     void KeyHandler(){
@@ -25,18 +22,12 @@ public class PlayerScript : MonoBehaviour
             Shoot();
         }
     }
-
-    void Shoot(){
-        GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
-        Rigidbody2D rigidbodyBullet = bullet.GetComponent<Rigidbody2D>();
-        rigidbodyBullet.AddForce(shootPoint.up*bulletForce, ForceMode2D.Impulse);
-    
-        RecoilShoot();
+    void MousePosition(){
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
     }
-    
-    void RecoilShoot(){
-        playerBody.velocity = playerBody.velocity*0.1f;
-        playerBody.AddForce(-shootPoint.up*bulletForce, ForceMode2D.Impulse);
+    void LookAtMouse(){
+        Vector2 lookDir = mousePos - pistolBody.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+        pistolBody.rotation = angle;
     }
-
 }
