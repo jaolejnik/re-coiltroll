@@ -266,6 +266,9 @@ MonoBehaviour:
   a: {r: 0.115877524, g: 0.32836887, b: 0.7924528, a: 0}
   spawnEffect: {fileID: 5306297155063683985, guid: 942ba44a2ca20e646ac962a5978eeda3,
     type: 3}
+  shotSound: {fileID: 8300000, guid: 79e00d01c0e208342995ddc0b99ce201, type: 3}
+  spawnSound: {fileID: 8300000, guid: 5de251ace00d1b04b8d9ec1355b427e9, type: 3}
+  reloadSound: {fileID: 8300000, guid: ff42782ed4314754eb0795970763f460, type: 3}
   hp: 1
   cam: {fileID: 0}
   shaker: {fileID: 0}

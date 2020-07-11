@@ -13,17 +13,21 @@ public class Pistol : MonoBehaviour
     public Rigidbody2D pistolBody;
     public Color a;
     public GameObject spawnEffect;
-    
+
+    public AudioClip shotSound;
+    public AudioClip spawnSound;
+    public AudioClip reloadSound;
+
     public float hp = 1;
 
     void Start(){
         SpawnEffect();
-
     }
+
     public void SpawnEffect(){
-        // 
+        //
         GameObject spawnEff = Instantiate(spawnEffect, gameObject.transform.position, Quaternion.identity);
-    
+        AudioSource.PlayClipAtPoint(spawnSound, pistolBody.transform.position);
         spawnEff.transform.SetParent(pistolBody.transform);
         Destroy(spawnEff, 1.5f);
     }
@@ -32,16 +36,16 @@ public class Pistol : MonoBehaviour
         GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
         Rigidbody2D rigidbodyBullet = bullet.GetComponent<Rigidbody2D>();
         rigidbodyBullet.AddForce(shootPoint.up*bulletForce, ForceMode2D.Impulse);
-    
+        AudioSource.PlayClipAtPoint(shotSound, pistolBody.transform.position, 1.5f);
         RecoilShoot();
     }
 
     public void RecoilForward(){
         pistolBody.velocity = new Vector2(0,0);
         pistolBody.AddForce(pistolBody.transform.up*recoilForce*0.1f, ForceMode2D.Impulse);
-    
+
     }
-    
+
     public void RecoilShoot(){
         pistolBody.velocity = pistolBody.velocity*0.1f;
         pistolBody.AddForce(-shootPoint.up*recoilForce, ForceMode2D.Impulse);
@@ -57,9 +61,9 @@ public class Pistol : MonoBehaviour
     }
     public void Die(){
          GameObject dieEff = Instantiate(spawnEffect, pistolBody.transform.position, Quaternion.identity);
-        Destroy(dieEff, 1f);    
+        Destroy(dieEff, 1f);
         Destroy(gameObject);
-   
+
     }
-    
+
 }
