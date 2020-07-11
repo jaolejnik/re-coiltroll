@@ -19,7 +19,7 @@ public class EchoScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if(playerRigidbody.velocity.sqrMagnitude > velocityTresh*velocityTresh){
+        if(playerRigidbody.velocity.sqrMagnitude > velocityTresh*velocityTresh){
 
         if(timeBtwSpawns <= 0 ){
             GameObject g = Instantiate(echo, playerRigidbody.transform.position,  playerRigidbody.transform.rotation);
@@ -31,5 +31,5 @@ public class EchoScript : MonoBehaviour
             timeBtwSpawns -= Time.deltaTime;
         }
         }
-    // }
+    }
 }
