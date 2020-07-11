@@ -7,10 +7,12 @@ public class PlayerScript : Pistol
     // Start is called before the first frame update
     private Vector2 mousePos;
     public Camera cam;
+    
     void Update()
     {
         MousePosition();
-        KeyHandler();       
+        KeyHandler();     
+          
     }
 
     void FixedUpdate() {
