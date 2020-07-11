@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ShaderLitMat
+  m_Name: ShaderLitMatPref
   m_Shader: {fileID: -6465566751694194690, guid: ec06cecbc2638e34db3f0055f30e2ffd,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -30,4 +30,4 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_BCFF0434: {r: 4, g: 4, b: 4, a: 0.2470588}
+    - Color_BCFF0434: {r: 0.0270282, g: 0, b: 0.8468836, a: 0.2470588}

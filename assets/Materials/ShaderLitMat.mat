@@ -30,4 +30,4 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - Color_BCFF0434: {r: 4, g: 4, b: 4, a: 0.2470588}
+    - Color_BCFF0434: {r: 0.023775948, g: 0, b: 2.270603, a: 0.2470588}

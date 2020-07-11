@@ -196,8 +196,6 @@ MonoBehaviour:
   spawnEffect: {fileID: 5306297155063683985, guid: 942ba44a2ca20e646ac962a5978eeda3,
     type: 3}
   hp: 1
-  speed: 200
-  nextWaypointDistance: 5
 --- !u!114 &2073373267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,4 +273,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 4915042325683148430, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+  target: {fileID: 0}
