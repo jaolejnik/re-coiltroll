@@ -196,8 +196,8 @@ MonoBehaviour:
   spawnEffect: {fileID: 5306297155063683985, guid: 942ba44a2ca20e646ac962a5978eeda3,
     type: 3}
   hp: 1
-  playerPrefab: {fileID: 4578948865316760196, guid: 7d99f63e73fb62c438861f231fbb7305,
-    type: 3}
+  speed: 200
+  nextWaypointDistance: 5
 --- !u!114 &2073373267
 MonoBehaviour:
   m_ObjectHideFlags: 0

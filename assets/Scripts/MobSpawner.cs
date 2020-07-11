@@ -10,7 +10,7 @@ public class MobSpawner : MonoBehaviour
     public GameObject _enemy;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

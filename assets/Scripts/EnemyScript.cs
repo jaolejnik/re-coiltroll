@@ -6,12 +6,12 @@ using Pathfinding;
 public class EnemyScript : Pistol
 {
 
-    public GameObject playerPrefab;
+    GameObject playerPrefab;
     private Vector2 playerPos;
     private Rigidbody2D playerRigidbody;
 
     // Pathfinding vars
-    public Transform target;
+    Transform target;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
     Path path;
@@ -31,10 +31,16 @@ public class EnemyScript : Pistol
 
     void Start()
     {
-        SpawnEffect();
+        playerPrefab = GameObject.FindWithTag ("Player");
+        if (playerPrefab == null)
+        {
+          Debug.Log("player is null");
+        }
+        target = GameObject.FindWithTag ("Player").transform;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         seeker.StartPath(rb.position, target.position, OnPathComplete);
+        SpawnEffect();
         playerRigidbody = playerPrefab.GetComponent<Rigidbody2D>();
     }
 
@@ -46,11 +52,14 @@ public class EnemyScript : Pistol
     void FixedUpdate() {
         LookAtPlayer();
         isAlive();
+        target = GameObject.FindWithTag ("Player").transform;
+
     }
 
     void PlayerPosition(){
         playerPos = playerRigidbody.transform.position;
     }
+
     void LookAtPlayer(){
         Vector2 lookDir = playerPos - pistolBody.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
