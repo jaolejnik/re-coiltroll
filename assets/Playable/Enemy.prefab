@@ -45,21 +45,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.8
+  m_FalloffIntensity: 0.199
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.06
+  m_Intensity: 1.15
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: f1d5466dbf6b25dd00000000
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 1
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_ShadowIntensity: 0.27
+  m_AlphaBlendOnOverlap: 1
+  m_ShadowIntensity: 0.307
   m_ShadowVolumeIntensity: 0.107
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 2.7955992
-  m_PointLightOuterRadius: 3.8557334
+  m_PointLightInnerRadius: 1.4545019
+  m_PointLightOuterRadius: 4.2299647
   m_PointLightDistance: 2.4
   m_PointLightQuality: 0
   m_ShapeLightParametricSides: 5
@@ -246,7 +246,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &4234978020467210115
 MonoBehaviour:
@@ -273,6 +273,10 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 5de251ace00d1b04b8d9ec1355b427e9, type: 3}
   reloadSound: {fileID: 8300000, guid: ff42782ed4314754eb0795970763f460, type: 3}
   hp: 1
+  ammo: 3
+  lastShoot: 0
+  fireRateTime: 0
+  fireRateLeft: 0
 --- !u!114 &2073373267
 MonoBehaviour:
   m_ObjectHideFlags: 0

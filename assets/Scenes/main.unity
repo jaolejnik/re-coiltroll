@@ -6583,6 +6583,11 @@ PrefabInstance:
       propertyPath: m_PointLightQuality
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 877764385774014124, guid: 7d99f63e73fb62c438861f231fbb7305,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4319255652150843196, guid: 7d99f63e73fb62c438861f231fbb7305,
         type: 3}
       propertyPath: cam
@@ -6866,6 +6871,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 4184029331789002398}
+    - target: {fileID: 675656110738658228, guid: 03cca7cd4f789564392bbda9beafaf91,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4234978020467210140, guid: 03cca7cd4f789564392bbda9beafaf91,
         type: 3}
       propertyPath: m_Name
