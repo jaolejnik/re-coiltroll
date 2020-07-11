@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_PBRShader
+  m_Shader: {fileID: -6465566751694194690, guid: 2fd8b460161c6744ca0c16e9ba96da17,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture2DAsset_44301869_Out_0:
+        m_Texture: {fileID: 2800000, guid: d919a4a25515d684796a2866fa0d83ea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2DAsset_E90F9017_Out_0:
+        m_Texture: {fileID: 2800000, guid: 7d149a3953bc41b4985c7fd185edaf35, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - Color_DC2D961C: {r: 0.9930925, g: 0.9696705, b: 0.9696705, a: 0.4666667}
+    - Color_ECE7FCC1: {r: 4, g: 4, b: 4, a: 0}
