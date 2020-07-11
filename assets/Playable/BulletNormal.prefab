@@ -133,3 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6895a5e642362e04db056859348ba496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  light2D: {fileID: 7362124703982072037, guid: 81ef2db5bfec0c44eb40a69a74164de5, type: 3}
+  hitEffect: {fileID: 4274555884614458308, guid: 7a390325232bf8b4d9a07061ce307630,
+    type: 3}
