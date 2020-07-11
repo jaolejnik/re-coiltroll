@@ -261,8 +261,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -492,8 +492,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -813,8 +813,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1206,8 +1206,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1473,8 +1473,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1969,8 +1969,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2227,8 +2227,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -2647,8 +2647,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3040,8 +3040,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3361,8 +3361,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3727,8 +3727,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -3958,8 +3958,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -4436,8 +4436,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584750145
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -6379,6 +6379,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1680125711274519545, guid: 20093edde5117324a9e5cd5ccb8e5ee9,
+        type: 3}
+      propertyPath: m_DeadZoneWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1680125711274519545, guid: 20093edde5117324a9e5cd5ccb8e5ee9,
+        type: 3}
+      propertyPath: m_DeadZoneHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20093edde5117324a9e5cd5ccb8e5ee9, type: 3}
 --- !u!1001 &2997044228218156825
@@ -6447,6 +6457,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997044228956799373, guid: 8b7394390b00ab84a9459f8c42baf290,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997044228956799373, guid: 8b7394390b00ab84a9459f8c42baf290,
+        type: 3}
+      propertyPath: m_ShadowIntensity
+      value: 0.037
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997044228956799373, guid: 8b7394390b00ab84a9459f8c42baf290,
+        type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[1]
+      value: 2000323443
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b7394390b00ab84a9459f8c42baf290, type: 3}
@@ -6526,6 +6551,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1338797429, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0118704345
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338797429, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99992955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338797430, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+      propertyPath: m_AlphaBlendOnOverlap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338797430, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 4.413158
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338797430, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 1.9897165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338797430, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338797430, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+      propertyPath: m_Intensity
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1338797430, guid: 7d99f63e73fb62c438861f231fbb7305, type: 3}
+      propertyPath: m_PointLightQuality
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4319255652150843196, guid: 7d99f63e73fb62c438861f231fbb7305,
         type: 3}
       propertyPath: cam
@@ -6536,6 +6593,11 @@ PrefabInstance:
       propertyPath: shaker
       value: 
       objectReference: {fileID: 608439310}
+    - target: {fileID: 4319255652150843196, guid: 7d99f63e73fb62c438861f231fbb7305,
+        type: 3}
+      propertyPath: fireRateTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4578948865316760196, guid: 7d99f63e73fb62c438861f231fbb7305,
         type: 3}
       propertyPath: m_Name
@@ -6740,15 +6802,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6837699569181078218, guid: 55c57aed6d7f18f4fa912d31a9fe731d,
+    - target: {fileID: 6837699569181078219, guid: 55c57aed6d7f18f4fa912d31a9fe731d,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 60
+      propertyPath: m_SortingLayerID
+      value: 2000323443
       objectReference: {fileID: 0}
-    - target: {fileID: 6837699569181078218, guid: 55c57aed6d7f18f4fa912d31a9fe731d,
+    - target: {fileID: 6837699569181078219, guid: 55c57aed6d7f18f4fa912d31a9fe731d,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 60
+      propertyPath: m_SortingLayer
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6837699569181078219, guid: 55c57aed6d7f18f4fa912d31a9fe731d,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c57aed6d7f18f4fa912d31a9fe731d, type: 3}
@@ -6759,6 +6826,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_BlendStyleIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_FalloffIntensity
+      value: 0.199
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_AlphaBlendOnOverlap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_PointLightInnerRadius
+      value: 1.4545019
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_LightVolumeOpacity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_ShadowIntensity
+      value: 0.307
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_PointLightOuterRadius
+      value: 4.2299647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_Intensity
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_PointLightQuality
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2073373269, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
       propertyPath: target
       value: 
@@ -6771,12 +6874,12 @@ PrefabInstance:
     - target: {fileID: 4718549054792944534, guid: 03cca7cd4f789564392bbda9beafaf91,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.91
+      value: -7.68
       objectReference: {fileID: 0}
     - target: {fileID: 4718549054792944534, guid: 03cca7cd4f789564392bbda9beafaf91,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.11
+      value: 1.81
       objectReference: {fileID: 0}
     - target: {fileID: 4718549054792944534, guid: 03cca7cd4f789564392bbda9beafaf91,
         type: 3}
