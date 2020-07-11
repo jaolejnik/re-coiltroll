@@ -37,5 +37,13 @@ public class EnemyScript : Pistol
         pistolBody.rotation = angle;
     }
 
+    void OnCollisionEnter2D(Collision2D hitInfo)
+    {
+        Debug.Log(hitInfo.gameObject.name);
+        if(hitInfo.gameObject.CompareTag("Player")){
+            PlayerScript player = hitInfo.gameObject.GetComponent<PlayerScript>();
+            player.Hit(1);
+        }
+    }
 
 }
