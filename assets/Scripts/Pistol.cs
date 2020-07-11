@@ -21,7 +21,7 @@ public class Pistol : MonoBehaviour
     public float hp = 1;
 
     void Start(){
-        SpawnEffect();
+        // SpawnEffect();
     }
 
     public void SpawnEffect(){
