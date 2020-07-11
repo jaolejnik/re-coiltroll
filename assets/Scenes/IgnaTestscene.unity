@@ -758,6 +758,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1036785071, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: m_BlendStyleIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119510056, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: startTimeBtwSpawns
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119510056, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: echo
+      value: 
+      objectReference: {fileID: 7099847765584147427, guid: 42674b53bab24444d8cd59c249bd4e00,
+        type: 3}
+    - target: {fileID: 1119510056, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+      propertyPath: velocityTresh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2073373269, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
       propertyPath: target
       value: 
