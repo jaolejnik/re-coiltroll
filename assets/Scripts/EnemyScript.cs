@@ -11,6 +11,7 @@ public class EnemyScript : Pistol
 
     void Start()
     {
+        SpawnEffect();
         playerRigidbody = playerPrefab.GetComponent<Rigidbody2D>();
     }
     void Update()
@@ -19,10 +20,11 @@ public class EnemyScript : Pistol
     }
     void FixedUpdate() {
         LookAtPlayer();
+        isAlive();
     }
 
     void PlayerPosition(){
-        playerPos = playerRigidbody.position;
+        playerPos = playerRigidbody.transform.position;
     }
     void LookAtPlayer(){
         Vector2 lookDir = playerPos - pistolBody.position;

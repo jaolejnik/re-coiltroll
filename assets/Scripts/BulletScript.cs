@@ -23,14 +23,16 @@ public class BulletScript : MonoBehaviour
     {
         
         Debug.Log(hitInfo.name);
-        if (hitInfo.CompareTag("Enemy")){
+        if (hitInfo.CompareTag("Enemys")){
             EnemyScript enemy = hitInfo.GetComponent<EnemyScript>();
-            if(enemy != null){}
-                // enemy.Die();
-            else
+            if(enemy != null){
+                enemy.Hit(1);
+            }
+            else{
                 Debug.Log("Lel");
+            }
         }
-        if(!hitInfo.CompareTag("Player")){
+        if(!hitInfo.CompareTag("Players")){
         GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
         Destroy(effect, 4f);
         Destroy(gameObject);

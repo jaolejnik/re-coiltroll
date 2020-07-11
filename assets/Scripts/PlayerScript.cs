@@ -7,6 +7,7 @@ public class PlayerScript : Pistol
     // Start is called before the first frame update
     private Vector2 mousePos;
     public Camera cam;
+    public SimpleCameraShakeInCinemachine shaker;
     
     void Update()
     {
@@ -22,6 +23,10 @@ public class PlayerScript : Pistol
     void KeyHandler(){
         if(Input.GetButtonDown("Fire1")){
             Shoot();
+            shaker.ShakeShoot();
+        }
+        if(Input.GetButtonDown("Fire2")){
+            RecoilForward();
         }
     }
     void MousePosition(){
