@@ -13,7 +13,7 @@ public class EnemyScript : Pistol
     void Start()
     {
         playerPrefab = GameObject.FindWithTag("Player");
-        SpawnEffect();
+        // SpawnEffect();
         playerRigidbody = playerPrefab.GetComponent<Rigidbody2D>();
     }
 
