@@ -214,6 +214,7 @@ MonoBehaviour:
   aimSound: {fileID: 8300000, guid: 3782dc8bf15c5a841ab8c47323102782, type: 3}
   chargeSound: {fileID: 8300000, guid: 34364e006bb3b3f4f8f7255cb642afad, type: 3}
   collisionSound: {fileID: 8300000, guid: a54b3d1052184984bbfb7d4984a47b60, type: 3}
+  deathSound: {fileID: 8300000, guid: b328643db6c9d454596242498c0ccdf1, type: 3}
 --- !u!50 &3085194883475648949
 Rigidbody2D:
   serializedVersion: 4

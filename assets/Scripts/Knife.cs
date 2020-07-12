@@ -23,6 +23,7 @@ public class Knife : MonoBehaviour
     public AudioClip aimSound;
     public AudioClip chargeSound;
     public AudioClip collisionSound;
+    public AudioClip deathSound;
 
     // Start is called before the first frame update
     void Start()
@@ -65,7 +66,7 @@ void OnDrawGizmos()
 {
       Gizmos.color = Color.yellow;
       Gizmos.DrawLine(rayPoint.position, rayPoint.up*minDistance);
-    
+
 }
     void Charge()
     {
@@ -109,10 +110,8 @@ void OnDrawGizmos()
     void OnCollisionEnter2D(Collision2D col)
     {
       destroyMeter -= 1;
-      if(destroyMeter>0){      
-        Instantiate(spawnEffect, transform.position, Quaternion.identity);
-      Destroy(spawnEffect,1.2f);
-        Destroy(gameObject);
+      if(destroyMeter>0){
+        Die();
           // Destroy()
       }
 
@@ -137,12 +136,11 @@ void OnDrawGizmos()
         hp -= damage;
     }
     public void Die(){
-      Instantiate(spawnEffect, transform.position, Quaternion.identity);
-      Destroy(spawnEffect,1.2f);
+        AudioSource.PlayClipAtPoint(deathSound, knifeTransformT.position, 0.5f);
         Destroy(gameObject);
         playerPrefab.GetComponent<PlayerScript>().addPoint();
     }
-    
+
     public void DieEnd(){
         //  GameObject dieEff = Instantiate(spawnEffect, pistolBody.transform.position, Quaternion.identity);
         // Destroy(dieEff, 1f);
