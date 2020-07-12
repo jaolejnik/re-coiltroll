@@ -78,4 +78,18 @@ public class PlayerScript : Pistol
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         pistolBody.rotation = angle;
     }
+
+     public override void Die(){
+        Debug.Log("I died");
+        pistolBody.MovePosition(new Vector2(0f,0f));
+        GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemys");
+
+        foreach (GameObject enemyT in enemys)
+        {
+            EnemyScript e = enemyT.GetComponent<EnemyScript>();
+            e.Die();
+        }
+
+        hp = 1;
+    }
 }

@@ -82,7 +82,7 @@ public class Pistol : MonoBehaviour
     public void Hit(float damage){
         hp -= damage;
     }
-    public void Die(){
+    virtual public void Die(){
          GameObject dieEff = Instantiate(spawnEffect, pistolBody.transform.position, Quaternion.identity);
         Destroy(dieEff, 1f);
         Destroy(gameObject);

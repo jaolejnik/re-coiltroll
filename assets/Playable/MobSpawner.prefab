@@ -44,3 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemy: {fileID: 4234978020467210140, guid: 03cca7cd4f789564392bbda9beafaf91, type: 3}
+  spawnDetector: {fileID: 2534865550771346744, guid: 6f224a54cc4773842bdd308a33de8116,
+    type: 3}
+  fireRateTime: 1.5
+  fireRateLeft: 0
+  x1: 29.9
+  x2: -30
+  y1: -31.5
+  y2: 28.24
