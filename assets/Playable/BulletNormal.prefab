@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2D: {fileID: 7362124703982072037, guid: 81ef2db5bfec0c44eb40a69a74164de5, type: 3}
-  hitEffect: {fileID: 4274555884614458308, guid: 7a390325232bf8b4d9a07061ce307630,
+  hitEffect: {fileID: 4274555884614458308, guid: 50a7a8cc98c8dc24dbb7bab1b9b070e1,
     type: 3}
 --- !u!96 &-4833453809560718844
 TrailRenderer:

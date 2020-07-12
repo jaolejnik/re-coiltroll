@@ -8,7 +8,8 @@ public class GampleyUIScript : MonoBehaviour
 {
     public GameObject player;
     public Texture2D bulletIcon;
-    PlayerScript playerScript;
+    public Text score;
+    private PlayerScript playerScript;
 
     float iconWidth;
     float iconHeight;
@@ -37,8 +38,13 @@ public class GampleyUIScript : MonoBehaviour
       }
     }
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-      Debug.Log("AMMO:" + playerScript.ammo);
+      iconWidth = 0.1f*Screen.height;
+      iconHeight = 0.1f*Screen.height;
+      iconXOffset = 0.6f * iconWidth;
+      iconX = Screen.width/2 - 2*iconWidth;
+      iconY = Screen.height - 1.2f*iconHeight;
+      score.text = (10*playerScript.score).ToString("000000");
     }
 }
