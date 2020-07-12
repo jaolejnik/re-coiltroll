@@ -52,7 +52,7 @@ public class PlayerScript : Pistol
         if(reloadAngel > 360){
             Debug.Log("OBROCIK");
             SpawnEffect();
-            
+            SetAmmo(ammoMagazine);
             // Shoot();
             reloadAngel = 0;
         }
@@ -91,8 +91,14 @@ public class PlayerScript : Pistol
         foreach (GameObject enemyT in enemys)
         {
             EnemyScript e = enemyT.GetComponent<EnemyScript>();
-            e.Die();
-        }
+            if(e!=null)
+                e.Die();
+            Knife e1 = enemyT.GetComponent<Knife>();
+            if(e1!=null)
+                e1.Die();
+
+
+        }        
 
         hp = 1;
     }

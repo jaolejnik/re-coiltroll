@@ -20,7 +20,9 @@ public class Pistol : MonoBehaviour
 
     public float hp = 1;
 
-    public float ammo = 3;
+    public int ammo = 6;
+    public int ammoPerShoot = 6;
+    public int ammoMagazine = 6;
     private bool canShoot = true;
     public float lastShoot;
     public float fireRateTime;
@@ -46,6 +48,7 @@ public class Pistol : MonoBehaviour
             AudioSource.PlayClipAtPoint(shotSound, pistolBody.transform.position, 1.5f);
             RecoilShoot();
             fireRateLeft = fireRateTime;
+            ammo -= ammoPerShoot;
             return true;
         }
         return false;
@@ -77,6 +80,8 @@ public class Pistol : MonoBehaviour
     public void isAlive(){
         if(hp <= 0){
             Die();
+            hp =1;
+            ammo = ammoMagazine;
         }
     }
     public void Hit(float damage){
@@ -89,10 +94,10 @@ public class Pistol : MonoBehaviour
 
     }
 
-    public void SetAmmo(float ammoNumber){
+    public void SetAmmo(int ammoNumber){
         ammo = ammoNumber;
     }
-    public void AddAmmo(float ammoNumber){
+    public void AddAmmo(int ammoNumber){
         ammo += ammoNumber;
     }
     public void IsAmmo(){

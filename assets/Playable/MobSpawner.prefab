@@ -52,4 +52,4 @@ MonoBehaviour:
   x2: -28.6
   y1: -28.4
   y2: 25.7
-  maxEnemys: 15
+  maxEnemys: 10

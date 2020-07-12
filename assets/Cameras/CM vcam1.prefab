@@ -254,12 +254,12 @@ PrefabInstance:
     - target: {fileID: 4225019418223119848, guid: 29863215e48992a48b08bcffcfe1a22c,
         type: 3}
       propertyPath: ShakeAmplitude
-      value: 1.69
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 4225019418223119848, guid: 29863215e48992a48b08bcffcfe1a22c,
         type: 3}
       propertyPath: ShakeDuration
-      value: 0.41
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 4225019418223119848, guid: 29863215e48992a48b08bcffcfe1a22c,
         type: 3}

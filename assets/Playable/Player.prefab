@@ -271,7 +271,9 @@ MonoBehaviour:
   spawnSound: {fileID: 8300000, guid: 5de251ace00d1b04b8d9ec1355b427e9, type: 3}
   reloadSound: {fileID: 8300000, guid: ff42782ed4314754eb0795970763f460, type: 3}
   hp: 1
-  ammo: 3
+  ammo: 6
+  ammoPerShoot: 1
+  ammoMagazine: 6
   lastShoot: 0
   fireRateTime: 0.4
   fireRateLeft: 0
