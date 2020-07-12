@@ -22,6 +22,7 @@ public class Knife : MonoBehaviour
     public AudioClip aimSound;
     public AudioClip chargeSound;
     public AudioClip collisionSound;
+    public AudioClip deathSound;
 
     // Start is called before the first frame update
     void Start()
@@ -57,7 +58,7 @@ void OnDrawGizmos()
 {
       Gizmos.color = Color.yellow;
       Gizmos.DrawLine(rayPoint.position, rayPoint.up*minDistance);
-    
+
 }
     void Charge()
     {
@@ -89,7 +90,7 @@ void OnDrawGizmos()
     {
       destroyMeter -= 1;
       if(destroyMeter>0){
-        Destroy(gameObject);
+        Die();
           // Destroy()
       }
 
@@ -114,9 +115,10 @@ void OnDrawGizmos()
         hp -= damage;
     }
     public void Die(){
+        AudioSource.PlayClipAtPoint(deathSound, knifeTransformT.position, 0.5f);
         Destroy(gameObject);
     }
-    
+
     public void DieEnd(){
         //  GameObject dieEff = Instantiate(spawnEffect, pistolBody.transform.position, Quaternion.identity);
         // Destroy(dieEff, 1f);

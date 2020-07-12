@@ -17,6 +17,7 @@ public class Pistol : MonoBehaviour
     public AudioClip shotSound;
     public AudioClip spawnSound;
     public AudioClip reloadSound;
+    public AudioClip deathSound;
 
     public float hp = 1;
 
@@ -89,6 +90,7 @@ public class Pistol : MonoBehaviour
     }
     virtual public void Die(){
          GameObject dieEff = Instantiate(spawnEffect, pistolBody.transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(deathSound, pistolBody.transform.position, 0.5f);
         Destroy(dieEff, 1f);
         Destroy(gameObject);
 
