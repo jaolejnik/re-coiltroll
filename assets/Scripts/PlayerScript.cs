@@ -92,10 +92,10 @@ public class PlayerScript : Pistol
         {
             EnemyScript e = enemyT.GetComponent<EnemyScript>();
             if(e!=null)
-                e.Die();
+                e.DieEnd();
             Knife e1 = enemyT.GetComponent<Knife>();
             if(e1!=null)
-                e1.Die();
+                e1.DieEnd();
 
 
         }        
