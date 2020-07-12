@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : Pistol
 {
@@ -75,6 +76,14 @@ public class PlayerScript : Pistol
         if(Input.GetButtonDown("Fire2")){
             RecoilForward();
         }
+        if(!isAlive()){
+                Debug.Log("Leeel");
+            if(Input.GetButton("reset")){
+                Debug.Log("LeeelReset");
+                SceneManager.LoadScene("main");
+            }
+
+        }
     }
     void MousePosition(){
         mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
@@ -93,10 +102,10 @@ public class PlayerScript : Pistol
     }
 
      public override void Die(){
-        hp = 1;
+        // hp = 1;
         Debug.Log("I died");
-        pistolBody.position  = new Vector3(0f,0f,0f);
-        pistolBody.velocity  = new Vector3(0f,0f,0f);
+        // pistolBody.position  = new Vector3(0f,0f,0f);
+        // pistolBody.velocity  = new Vector3(0f,0f,0f);
         // pistolBody.rotation  = Quaternion.identity;
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemys");
 
@@ -124,7 +133,7 @@ public class PlayerScript : Pistol
             highScore = score;
             PlayerPrefs.SetInt("Score", highScore);
         }
-        hp = 1;
+        // hp = 1;
         score = 0;
     }
 

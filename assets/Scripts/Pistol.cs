@@ -78,12 +78,14 @@ public class Pistol : MonoBehaviour
         pistolBody.AddForce(-shootPoint.up*recoilForce, ForceMode2D.Impulse);
     }
 
-    public void isAlive(){
+    public bool isAlive(){
         if(hp <= 0){
             Die();
-            hp = 1;
+            // hp = 1;
             ammo = ammoMagazine;
+            return false;
         }
+        return true;
     }
     public void Hit(float damage){
         hp -= damage;
