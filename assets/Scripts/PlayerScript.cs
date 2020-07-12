@@ -81,7 +81,7 @@ public class PlayerScript : Pistol
 
      public override void Die(){
         Debug.Log("I died");
-        pistolBody.MovePosition(new Vector2(0f,0f));
+        pistolBody.position  = new Vector3(0f,0f,0f);
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemys");
 
         foreach (GameObject enemyT in enemys)
