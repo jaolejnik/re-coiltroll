@@ -48,7 +48,8 @@ MonoBehaviour:
     type: 3}
   fireRateTime: 1.5
   fireRateLeft: 0
-  x1: 29.9
-  x2: -30
-  y1: -31.5
-  y2: 28.24
+  x1: 29.78
+  x2: -28.6
+  y1: -28.4
+  y2: 25.7
+  maxEnemys: 15

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1036785070}
   - component: {fileID: 1036785071}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 382273434235158677}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: shootPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 2073373268}
   - component: {fileID: 2073373269}
   - component: {fileID: 1119510056}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Enemys
   m_Icon: {fileID: 0}
