@@ -93,6 +93,12 @@ public class Pistol : MonoBehaviour
         Destroy(gameObject);
 
     }
+    public void DieEnd(){
+        //  GameObject dieEff = Instantiate(spawnEffect, pistolBody.transform.position, Quaternion.identity);
+        // Destroy(dieEff, 1f);
+        Destroy(gameObject);
+
+    }
 
     public void SetAmmo(int ammoNumber){
         ammo = ammoNumber;

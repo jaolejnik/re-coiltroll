@@ -63,7 +63,7 @@ void OnDrawGizmos()
     {
       RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, rayPoint.up, Vector2.Distance(rayPoint.position, playerTransform.position));
       // Debug.Log("LEEEEEEEL"+ hitInfo.rigidbody.GetComponent<PlayerScript>());
-      if (hitInfo.collider.CompareTag("Player"))
+      if (hitInfo.collider.gameObject.CompareTag("Player"))
       {
         charging = 1;
         // float distance = Vector2.Distance(rayPoint.position, playerTransform.position);
@@ -115,5 +115,12 @@ void OnDrawGizmos()
     }
     public void Die(){
         Destroy(gameObject);
+    }
+    
+    public void DieEnd(){
+        //  GameObject dieEff = Instantiate(spawnEffect, pistolBody.transform.position, Quaternion.identity);
+        // Destroy(dieEff, 1f);
+        Destroy(gameObject);
+
     }
 }

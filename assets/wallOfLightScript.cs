@@ -10,19 +10,21 @@ public class wallOfLightScript : MonoBehaviour
         
     }
 
-
-    void OnCollisionEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         Debug.Log("Coliision with " + other.gameObject.name);
         if(other.gameObject.CompareTag("Player")){
             PlayerScript p = other.gameObject.GetComponent<PlayerScript>();
-            p.Hit(1);
+            if(p != null)
+                p.Hit(1);
         }
         if(other.gameObject.CompareTag("Enemys")){
             Knife k = other.gameObject.GetComponent<Knife>();
-            k.Hit(1);
+            if(k != null)
+                k.Hit(1);
             EnemyScript e = other.gameObject.GetComponent<EnemyScript>();
-            e.Hit(1);
+            if(e != null)
+                e.Hit(1);
         }
     }
 }

@@ -6,19 +6,25 @@ public class wallOfForce : MonoBehaviour
 {
     // Start is called before the first frame update
     public float forcePush;
+    private Vector2 forceVector;
+    private Vector2 forceVectorNormal;
+    private Rigidbody2D rbCol;
 
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Coliision with " + other.gameObject.name);
         foreach (ContactPoint2D missileHit in other.contacts)
         {
-            Vector2 forceVector = missileHit.point;
-            Rigidbody2D rbCol = other.gameObject.GetComponent<Rigidbody2D>();
+            forceVectorNormal = missileHit.normal;
+            forceVector = missileHit.point;
+            PlayerScript p = other.gameObject.GetComponent<PlayerScript>();
+            rbCol = p.GetComponent<Rigidbody2D>();
             if(rbCol != null){
-                rbCol.AddForce(-forceVector*forcePush, ForceMode2D.Impulse);
+                rbCol.velocity = Vector2.Reflect(rbCol.velocity, forceVectorNormal).normalized*forcePush; 
+                // rbCol.AddForce(new Vector3(forceVector.x, forceVector.y, 0) - Quaternion.AngleAxis(180, forceVectorNormal) * rbCol.transform.forward * forcePush, ForceMode2D.Impulse);
+                // rbCol.velocity = Quaternion.AngleAxis(180, forceVectorNormal) * rbCol.transform.forward * -forcePush;
+                Debug.Log("Coliision with " + other.gameObject.name+ rbCol.velocity.ToString());
             }
-            Gizmos.DrawLine(forceVector, )
             // if(other.gameObject.CompareTag("Player")){
             //     PlayerScript p = other.gameObject.GetComponent<PlayerScript>();
             //     p.GetComponent<Rigidbody2D>().AddForce(forceVector, ForceMode2D.Impulse);
@@ -31,5 +37,12 @@ public class wallOfForce : MonoBehaviour
             // }
 
         }
+    }
+    /// <summary>
+    /// Callback to draw gizmos that are pickable and always drawn.
+    /// </summary>
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawLine(forceVector, Quaternion.AngleAxis(180, forceVectorNormal) * rbCol.transform.forward * 1);
     }
 }
