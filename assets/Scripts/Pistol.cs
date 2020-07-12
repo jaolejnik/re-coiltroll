@@ -54,7 +54,7 @@ public class Pistol : MonoBehaviour
         return false;
     }
 
-    public void FireRate(){       
+    public void FireRate(){
         if(fireRateLeft <= 0 ){
             canShoot = true;
             // fireRateLeft = fireRateTime;
