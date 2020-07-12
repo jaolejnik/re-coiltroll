@@ -52,6 +52,7 @@ public class PlayerScript : Pistol
         if(reloadAngel > 360){
             Debug.Log("OBROCIK");
             SpawnEffect();
+            
             // Shoot();
             reloadAngel = 0;
         }
@@ -69,11 +70,6 @@ public class PlayerScript : Pistol
         }
         if(Input.GetButtonDown("Fire2")){
             RecoilForward();
-        }
-    }
-    void IsAmmo(){
-        if(ammo <= 0){
-            canShoot = false;
         }
     }
     void MousePosition(){
@@ -100,4 +96,5 @@ public class PlayerScript : Pistol
 
         hp = 1;
     }
+    
 }
