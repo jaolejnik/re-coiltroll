@@ -43,6 +43,6 @@ public class wallOfForce : MonoBehaviour
     /// </summary>
     void OnDrawGizmos()
     {
-        Gizmos.DrawLine(forceVector, Quaternion.AngleAxis(180, forceVectorNormal) * rbCol.transform.forward * 1);
+        // Gizmos.DrawLine(forceVector, Quaternion.AngleAxis(180, forceVectorNormal) * rbCol.transform.forward * 1);
     }
 }

@@ -12,8 +12,12 @@ public class PlayerScript : Pistol
     private float reloadDirection = 1;
     private Quaternion reloadLastDirection = new Quaternion();
     private float reloadAngel = 0;
+    private int highScore = 0;
+    private int score = 0;
     
     void Start(){
+        
+        highScore = PlayerPrefs.GetInt("Score", 0);
         StartCoroutine(RotateToReload());
     }
 
@@ -80,8 +84,16 @@ public class PlayerScript : Pistol
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         pistolBody.rotation = angle;
     }
+    public void addPoint(){
+        score += 1;
+        if(score>highScore){
+            highScore = score;
+            PlayerPrefs.SetInt("Score", highScore);
+        }
+    }
 
      public override void Die(){
+        hp = 1;
         Debug.Log("I died");
         pistolBody.position  = new Vector3(0f,0f,0f);
         pistolBody.velocity  = new Vector3(0f,0f,0f);
@@ -96,11 +108,28 @@ public class PlayerScript : Pistol
             Knife e1 = enemyT.GetComponent<Knife>();
             if(e1!=null)
                 e1.DieEnd();
-
-
         }        
 
+        GameObject[] collects = GameObject.FindGameObjectsWithTag("Collect");
+        foreach (GameObject collectT in collects)
+        {
+            ChangeAmmo e = collectT.GetComponent<ChangeAmmo>();
+            if(e!=null)
+                e.DieEnd();
+        }        
+
+
+        if(score > highScore)
+        {
+            highScore = score;
+            PlayerPrefs.SetInt("Score", highScore);
+        }
         hp = 1;
+        score = 0;
+    }
+
+    public void SetAmmoType(int typeAmmo){
+
     }
     
 }

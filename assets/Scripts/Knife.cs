@@ -6,6 +6,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 public class Knife : MonoBehaviour
 {
     public Rigidbody2D knifeRigidBody;
+    public GameObject spawnEffect;
     Rigidbody2D playerRigidbody;
     public float dashForce = 10f;
     public float minDistance = 10f;
@@ -34,7 +35,14 @@ public class Knife : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {      Vector2 laserHit = new Vector2(0,0);
+      RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up);
+      laserHit= hit.point;
+      LineRenderer lineRend = GetComponent<LineRenderer>();
+      lineRend.enabled = true;
+      // lineRend.useWorldSpace = true;
+      lineRend.SetPosition(0, transform.position);
+      lineRend.SetPosition(1, laserHit);
     }
 
     void FixedUpdate()
@@ -63,7 +71,9 @@ void OnDrawGizmos()
     {
       RaycastHit2D hitInfo = Physics2D.Raycast(rayPoint.position, rayPoint.up, Vector2.Distance(rayPoint.position, playerTransform.position));
       // Debug.Log("LEEEEEEEL"+ hitInfo.rigidbody.GetComponent<PlayerScript>());
-      if (hitInfo.collider.gameObject.CompareTag("Player"))
+      if(hitInfo){
+      GameObject gb = hitInfo.collider.gameObject;
+      if (gb.tag == "Player")
       {
         charging = 1;
         // float distance = Vector2.Distance(rayPoint.position, playerTransform.position);
@@ -72,11 +82,22 @@ void OnDrawGizmos()
         //   charging = 1;
         // }
       }
+      }
     }
 
     IEnumerator Dash()
     {
       // AudioSource.PlayClipAtPoint(aimSound, knifeRigidBody.transform.position, 1f);
+      Vector2 laserHit = new Vector2(0,0);
+      RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up);
+      laserHit= hit.point;
+      LineRenderer lineRend = GetComponent<LineRenderer>();
+      lineRend.enabled = true;
+      // lineRend.useWorldSpace = true;
+      lineRend.SetPosition(0, transform.position);
+      lineRend.SetPosition(1, laserHit);
+      Debug.DrawLine(transform.position, laserHit);
+    
       yield return new WaitForSeconds(chargeTime);
       knifeRigidBody.AddForce(dashForce*knifeTransformT.up, ForceMode2D.Impulse);
       while(knifeRigidBody.velocity.SqrMagnitude() > dashVelocityTresh*dashVelocityTresh)
@@ -88,7 +109,9 @@ void OnDrawGizmos()
     void OnCollisionEnter2D(Collision2D col)
     {
       destroyMeter -= 1;
-      if(destroyMeter>0){
+      if(destroyMeter>0){      
+        Instantiate(spawnEffect, transform.position, Quaternion.identity);
+      Destroy(spawnEffect,1.2f);
         Destroy(gameObject);
           // Destroy()
       }
@@ -114,7 +137,10 @@ void OnDrawGizmos()
         hp -= damage;
     }
     public void Die(){
+      Instantiate(spawnEffect, transform.position, Quaternion.identity);
+      Destroy(spawnEffect,1.2f);
         Destroy(gameObject);
+        playerPrefab.GetComponent<PlayerScript>().addPoint();
     }
     
     public void DieEnd(){

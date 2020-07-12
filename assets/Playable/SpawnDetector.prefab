@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2534865550771346744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7618246, y: 15.41387, z: 0}
+  m_LocalPosition: {x: 14.752064, y: -22.770704, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canSpawn: 1
+  distanceToPlayer: 8
 --- !u!50 &3424129185979406218
 Rigidbody2D:
   serializedVersion: 4

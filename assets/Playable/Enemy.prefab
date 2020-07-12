@@ -274,6 +274,8 @@ MonoBehaviour:
   reloadSound: {fileID: 8300000, guid: ff42782ed4314754eb0795970763f460, type: 3}
   hp: 1
   ammo: 3
+  ammoPerShoot: 6
+  ammoMagazine: 6
   lastShoot: 0
   fireRateTime: 0
   fireRateLeft: 0
@@ -295,7 +297,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 5
+  maxSpeed: 7
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2

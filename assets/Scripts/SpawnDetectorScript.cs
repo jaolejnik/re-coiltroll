@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnDetectorScript : MonoBehaviour
 {
     public float canSpawn = 1;
+    public float distanceToPlayer = 8;
     // Start is called before the first frame update
     /// <summary>
     /// OnCollisionStay is called once per frame for every collider/rigidbody
@@ -23,8 +24,13 @@ public class SpawnDetectorScript : MonoBehaviour
         canSpawn = -1;
     }
     float CanSpawn(){
-        float ret = canSpawn;
-        canSpawn = 0;
-        return ret;
+        if(Vector2.Distance(GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().transform.position, transform.position)<distanceToPlayer)
+        {
+            float ret = canSpawn;
+            canSpawn = 0;
+            return ret;
+        }
+        else    
+            return -1;
     }
 }

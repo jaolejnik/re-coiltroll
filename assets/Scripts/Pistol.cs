@@ -80,7 +80,7 @@ public class Pistol : MonoBehaviour
     public void isAlive(){
         if(hp <= 0){
             Die();
-            hp =1;
+            hp = 1;
             ammo = ammoMagazine;
         }
     }

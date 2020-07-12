@@ -33,7 +33,7 @@ public class GampleyUIScript : MonoBehaviour
       {
         Rect imRect = new Rect(iconX+i*iconXOffset, iconY, iconWidth, iconHeight);
         Debug.Log(imRect);
-        Debug.Log("RECT SIE RYSUJE ASDJAKLDAKSJDKJASDKJKALJSDLKADLJKLADKJ");
+        // Debug.Log("RECT SIE RYSUJE ASDJAKLDAKSJDKJASDKJKALJSDLKADLJKLADKJ");
         GUI.DrawTexture(imRect, bulletIcon);
       }
     }

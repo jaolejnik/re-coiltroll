@@ -45,5 +45,13 @@ public class EnemyScript : Pistol
             player.Hit(1);
         }
     }
+    
+     public override void Die(){
+        playerPrefab.GetComponent<PlayerScript>().addPoint();
+        GameObject dieEff = Instantiate(spawnEffect, pistolBody.transform.position, Quaternion.identity);
+        Destroy(dieEff, 1f);
+        Destroy(gameObject);
+
+    }
 
 }
