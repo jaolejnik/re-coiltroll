@@ -798,6 +798,12 @@ PrefabInstance:
       propertyPath: shaker
       value: 
       objectReference: {fileID: 608439310}
+    - target: {fileID: 4319255652150843196, guid: 7d99f63e73fb62c438861f231fbb7305,
+        type: 3}
+      propertyPath: spawnEffect
+      value: 
+      objectReference: {fileID: 5481278358411714805, guid: 000eb11bac104844ea18925203219a49,
+        type: 3}
     - target: {fileID: 4578948865316760196, guid: 7d99f63e73fb62c438861f231fbb7305,
         type: 3}
       propertyPath: m_Name
