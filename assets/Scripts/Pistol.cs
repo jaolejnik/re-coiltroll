@@ -24,6 +24,8 @@ public class Pistol : MonoBehaviour
     public int ammo = 6;
     public int ammoPerShoot = 6;
     public int ammoMagazine = 6;
+
+    public int ammoType = 0;
     private bool canShoot = true;
     public float lastShoot;
     public float fireRateTime;
@@ -43,6 +45,20 @@ public class Pistol : MonoBehaviour
 
     public bool Shoot(){
         if(canShoot){
+            if(ammoType == 0){
+                ShootType1();
+            }
+            else if(ammoType == 1){
+                ShootType2();
+            }
+
+
+            return true;
+        }
+        return false;
+    }
+
+    public void ShootType1(){
             GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
             Rigidbody2D rigidbodyBullet = bullet.GetComponent<Rigidbody2D>();
             rigidbodyBullet.AddForce(shootPoint.up*bulletForce, ForceMode2D.Impulse);
@@ -50,9 +66,15 @@ public class Pistol : MonoBehaviour
             RecoilShoot();
             fireRateLeft = fireRateTime;
             ammo -= ammoPerShoot;
-            return true;
-        }
-        return false;
+    }
+    public void ShootType2(){
+            GameObject bullet = Instantiate(bulletPrefab, shootPoint.position, shootPoint.rotation);
+            Rigidbody2D rigidbodyBullet = bullet.GetComponent<Rigidbody2D>();
+            rigidbodyBullet.AddForce(shootPoint.up*bulletForce, ForceMode2D.Impulse);
+            AudioSource.PlayClipAtPoint(shotSound, pistolBody.transform.position, 1.5f);
+            RecoilShoot();
+            fireRateLeft = fireRateTime;
+            ammo -= ammoPerShoot;
     }
 
     public void FireRate(){

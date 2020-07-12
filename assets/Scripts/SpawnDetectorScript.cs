@@ -24,7 +24,7 @@ public class SpawnDetectorScript : MonoBehaviour
         canSpawn = -1;
     }
     float CanSpawn(){
-        if(Vector2.Distance(GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().transform.position, transform.position)<distanceToPlayer)
+        if(Vector2.Distance(GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>().transform.position, transform.position)>distanceToPlayer)
         {
             float ret = canSpawn;
             canSpawn = 0;
