@@ -89,4 +89,15 @@ public class Pistol : MonoBehaviour
 
     }
 
+    public void SetAmmo(float ammoNumber){
+        ammo = ammoNumber;
+    }
+    public void AddAmmo(float ammoNumber){
+        ammo += ammoNumber;
+    }
+    public void IsAmmo(){
+        if(ammo <= 0){
+            canShoot = false;
+        }
+    }
 }
